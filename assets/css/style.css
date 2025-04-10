@@ -556,6 +556,47 @@ main {
 }
 
 
+/* === Skills Section === */
+.skills {
+  /* your existing styles */
+}
+
+/* === Logo Marquee Section === */
+.logo-marquee-container {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  padding: 10px 0;
+}
+
+.logo-marquee {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+}
+
+.logo-marquee-content {
+  display: flex;
+  gap: 40px;
+}
+
+.logo-marquee-content img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 /**
  * #testimonials 
  */
