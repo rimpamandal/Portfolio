@@ -875,12 +875,13 @@ main {
  * skills 
  */
 
+/* Skills Section */
 .skills-container {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 
 .skills-column {
@@ -889,23 +890,29 @@ main {
 }
 
 .skills-subtitle {
-  font-size: 20px;
-  color: white;
-  margin-bottom: 10px;
-  border-bottom: 1px solid white;
-  padding-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #333;
 }
 
 .skills-list-text {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: white;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
 .skills-item-text {
-  margin-bottom: 8px;
-  font-size: 16px;
+  margin-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.skills-item-text::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #007acc;
 }
 
 
