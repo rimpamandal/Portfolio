@@ -879,7 +879,7 @@ main {
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem 3rem;
+  gap: 2rem 5rem;
   margin-top: 1.5rem;
 }
 
