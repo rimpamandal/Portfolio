@@ -878,8 +878,8 @@ main {
 /* Skills Grid Layout */
 .skills-grid {
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 1rem 3rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 3rem;
   margin-top: 1.5rem;
 }
 
@@ -898,6 +898,7 @@ main {
   color: white;  /* White text color by default */
   cursor: pointer;
   background-color: transparent;  /* No background */
+  white-space: nowrap;  /* Prevent line breaks */
 }
 
 .skills-item:hover {
