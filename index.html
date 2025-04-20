@@ -1564,25 +1564,6 @@
   </main>
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const skillsContainer = document.querySelector(".skills-container");
-
-    function revealSkills() {
-      const containerTop = skillsContainer.getBoundingClientRect().top;
-      const screenHeight = window.innerHeight;
-
-      if (containerTop < screenHeight - 100) {
-        skillsContainer.classList.add("visible");
-        window.removeEventListener("scroll", revealSkills);
-      }
-    }
-
-    window.addEventListener("scroll", revealSkills);
-    revealSkills(); // Run on load
-  });
-</script>
-
 
 
 
