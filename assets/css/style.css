@@ -875,45 +875,34 @@ main {
  * skills 
  */
 
-/* Skills Section */
-.skills-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
+/* Skills Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
   margin-top: 1.5rem;
 }
 
-.skills-column {
-  flex: 1;
-  min-width: 250px;
-}
-
-.skills-subtitle {
-  font-size: 1.2rem;
+.skills-header {
   font-weight: 600;
-  margin-bottom: 0.8rem;
-  color: #333;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 0.5rem;
+  color: white;  /* Font color for headers */
 }
 
-.skills-list-text {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.skills-item {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed #ccc;
+  color: white;  /* Default font color */
+  cursor: pointer;
 }
 
-.skills-item-text {
-  margin-bottom: 0.6rem;
-  padding-left: 1.2rem;
-  position: relative;
+.skills-item:hover {
+  color: white;  /* Ensure text stays white on hover */
+  background-color: transparent;  /* No background color */
 }
 
-.skills-item-text::before {
-  content: "–";
-  position: absolute;
-  left: 0;
-  color: #007acc;
-}
 
 
 
