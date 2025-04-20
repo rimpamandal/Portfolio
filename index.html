@@ -1046,13 +1046,13 @@
 
           </ul> -->
 
-          <section class="skill">
+          <section class="skill" id="skills">
   <h3 class="h3 skills-title">My Skills</h3>
 
   <div class="skills-container">
-    
+
     <!-- Technical Skills -->
-    <div class="skills-row">
+    <div class="skills-column">
       <h4 class="skills-subtitle">Technical Skills</h4>
       <ul class="skills-list-text">
         <li class="skills-item-text">Advanced Data Visualization</li>
@@ -1063,7 +1063,7 @@
     </div>
 
     <!-- Soft Skills -->
-    <div class="skills-row">
+    <div class="skills-column">
       <h4 class="skills-subtitle">Soft Skills</h4>
       <ul class="skills-list-text">
         <li class="skills-item-text">Business Acumen</li>
@@ -1075,8 +1075,7 @@
 
   </div>
 </section>
-
-        <div class="separator"></div>
+                <div class="separator"></div>
         
         <a href="./assets2/Rimpa Mandal.resume.pdf" download="Resume" class="download-link">
           <button class="form-btn" type="submit" data-form-btn>
@@ -1575,6 +1574,24 @@
   </main>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const skillsContainer = document.querySelector(".skills-container");
+
+    function revealSkills() {
+      const containerTop = skillsContainer.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (containerTop < screenHeight - 100) {
+        skillsContainer.classList.add("visible");
+        window.removeEventListener("scroll", revealSkills);
+      }
+    }
+
+    window.addEventListener("scroll", revealSkills);
+    revealSkills(); // Run on load
+  });
+</script>
 
 
 
